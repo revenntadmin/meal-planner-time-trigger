@@ -13,7 +13,7 @@ const pool = new pg.Pool({
     database: "meal_planner",
     port: 5432,
     ssl: {
-        ca: fs.readFileSync('./DigiCertGlobalRootCA.crt.pem')
+        ca: fs.readFileSync('./certificate.pem')
     }
 });
 
