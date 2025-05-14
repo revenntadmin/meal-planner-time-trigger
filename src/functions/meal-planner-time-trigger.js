@@ -13,7 +13,7 @@ const pool = new pg.Pool({
     database: "meal_planner",
     port: 5432,
     ssl: {
-        ca: fs.readFileSync('./certificate.pem')
+        ca: fs.readFileSync('./azure_pg_root_bundle.pem')
     }
 });
 
